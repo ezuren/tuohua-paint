@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- 拓绘画板品牌标志：与页面左上角 brand-logo 一致 -->
+  <!-- 注意：favicon 是独立文档，无法继承页面 CSS 变量，颜色必须写死 -->
+  <style>
+    .tile { fill: #1b66d9; }
+    .mesh { fill: none; stroke: #ffffff; stroke-width: 1.65; stroke-linecap: round; stroke-linejoin: round; }
+    .node-dot { fill: #ffffff; }
+    /* 深色模式下跟随页面的 --accent 深色值 */
+    @media (prefers-color-scheme: dark) {
+      .tile { fill: #6aa5ff; }
+    }
+  </style>
+  <rect class="tile" x="2" y="2" width="28" height="28" rx="8"/>
+  <path class="mesh" d="M16 12V8H10.5M16 8h5.5M16 20v4h-5.5M16 24h5.5"/>
+  <rect class="mesh" x="10.5" y="12" width="11" height="8" rx="2"/>
+  <circle class="node-dot" cx="8.5" cy="8" r="2"/>
+  <circle class="node-dot" cx="23.5" cy="8" r="2"/>
+  <circle class="node-dot" cx="8.5" cy="24" r="2"/>
+  <circle class="node-dot" cx="23.5" cy="24" r="2"/>
+</svg>
